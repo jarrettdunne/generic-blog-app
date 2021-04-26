@@ -1,9 +1,5 @@
 # PROJECT 4 README <!-- omit in toc -->
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
@@ -23,8 +19,7 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+_**Project Title** Basically, this is going to be a stripped down variant of reddit with inpiration from other social media platforms and this is worth mentioning since it clearly takes inspiration from these sites. There will be database structure differences from reddit per the minimum table requirements but this could in fact be beneficial in terms of scaling the app._
 
 <br>
 
@@ -38,7 +33,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
+- _Full CRUD_
 - _consectetur adipiscing elit._
 - _Phasellus dapibus fermentum risus vitae bibendum._
 - _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
@@ -66,29 +61,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+[Figma Wireframes Link](https://www.figma.com/file/WXQdQaGeiOfLC06KyYtnqe/p4?node-id=0%3A1)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+[Figma Prototype Views](https://www.figma.com/proto/WXQdQaGeiOfLC06KyYtnqe/p4?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1)
 
 #### Component Tree
 
@@ -147,7 +122,7 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> ```TBD```
 
 ## Code Issues & Resolutions
 
