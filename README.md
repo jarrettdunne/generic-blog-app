@@ -19,7 +19,7 @@
 
 ## Overview
 
-**Just Another Social Media App aka jasma**
+###**baba**
 <br>
 Basically, this is going to be a stripped down variant of reddit with inpiration from other social media platforms and this is worth mentioning since it clearly takes inspiration from these sites. There will be database structure differences from reddit per the minimum table requirements but this could in fact be beneficial in terms of scaling the app.
 
