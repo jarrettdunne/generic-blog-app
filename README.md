@@ -76,10 +76,22 @@ src
 |__ components/
       |__ Header
       |__ Footer
+      |__ PostMain
+      |__ PostSmall
 |__ containers
 |__ Layouts
+      |__ UserCreate
+      |__ UserLogin
 |__ screens
+      |__ Home
+      |__ PostDetail
+      |__ PostCreate
+      |__ PostEdit
+      |__ UserHome
 |__ services/
+      |__ apiCongif.js
+      |__ posts.js
+      |__ users.js
 
 ```
 
