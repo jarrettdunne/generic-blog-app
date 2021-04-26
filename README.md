@@ -90,6 +90,7 @@ src
       |__ UserHome
 |__ services/
       |__ apiCongif.js
+      |__ auth.js
       |__ posts.js
       |__ users.js
 
