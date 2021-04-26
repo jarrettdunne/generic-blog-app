@@ -100,25 +100,26 @@ src
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      3hrs      |     3hrs      |    3hrs     |
-| React app setup           |    H     |    .25hrs      |     0hrs      |    0hrs     |
-| Airtable Setup            |    H     |      1hrs      |     0hrs      |    0hrs     |
-| Enter sample data in API  |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Ruby Rails app setup           |    H     |    .25hrs      |     0hrs      |    0hrs     |
+| Database Models Setup            |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Databse Controllers Setup  |    H     |      1hrs      |     0hrs      |    0hrs     |
 | Form component setup      |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Display component setup   |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Display clickable recipes |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Dropdown functionality    |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Navbar component setup    |    H     |     .5hrs      |     0hrs      |    0hrs     |
-| Form add component        |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Form edit component       |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Link / route components   |    H     |      1hrs      |     0hrs      |    0hrs     |
-| Form input parsing        |    H     |      3hrs      |     0hrs      |    0hrs     |
-| GET data from API         |    H     |      2hrs      |     0hrs      |    0hrs     |
-| POST data to API          |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Form Add CSS              |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Form Edit CSS             |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Home page CSS             |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Display CSS               |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Total                     |    H     |  37.75hrs      |     0hrs      |    0hrs     |
+| Create Database Seed Data  |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Database Routes |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Full CRUD testing   |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Cors Setup    |    H     |     .5hrs      |     0hrs      |    0hrs     |
+| Setup React App   |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Build App.jsx        |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Build Home.jsx         |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Build Post.jsx          |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Build PostDetail.jsx              |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Build PostEdit.jsx             |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Build UserHome.jsx             |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Build UserLogin.jsx               |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Build UserCreate.jsx               |    H     |      2hrs      |     0hrs      |    0hrs     |
+| CSS Styling        |    H     |      3hrs      |     0hrs      |    0hrs     |
+| More CSS Styling       |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Total                     |    H     |  38.75hrs      |     0hrs      |    0hrs     |
 
 <br>
 
