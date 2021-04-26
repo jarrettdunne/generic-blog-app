@@ -19,27 +19,27 @@
 
 ## Overview
 
-_**SoDoSoPa**
+> **SoDoSoPa**
 <br>
-Basically, this is going to be a stripped down variant of reddit with inpiration from other social media platforms and this is worth mentioning since it clearly takes inspiration from these sites. There will be database structure differences from reddit per the minimum table requirements but this could in fact be beneficial in terms of scaling the app._
+Basically, this is going to be a stripped down variant of reddit with inpiration from other social media platforms and this is worth mentioning since it clearly takes inspiration from these sites. There will be database structure differences from reddit per the minimum table requirements but this could in fact be beneficial in terms of scaling the app.
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+The **SoDoSoPa** MVP
 
-_The **SoDoSoPa** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
 ### Goals
 
-- _Full CRUD_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Full CRUD on the front and back ends_
+- _At least three SQL tables._
+- _Association, both in the database and displayed in the frontend._
+- _User authentication._
+- _At least eight REACT components._
+- _User authentication._
 
 <br>
 
@@ -49,11 +49,12 @@ _The **SoDoSoPa** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. P
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _React is an open-source, front end, JavaScript library for building user interfaces or UI components._ |
+|   React Router   | _React Router is a collection of navigational components that compose declaratively with your application._ |
+|   React Router DOM   | _It contains the React Native bindings for React Router._ |
+|      Axios       | _Promise based HTTP client for the browser and node.js._ |
+|     pry-rails    | _Pry is a runtime developer console and IRB alternative with powerful introspection capabilities.._ |
+|      cors        | _Provides support for Cross-Origin Resource Sharing (CORS) for Rack compatible web applications._ |
 
 <br>
 
@@ -84,7 +85,11 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Header
+      |__ Footer
+|__ containers
+|__ Layouts
+|__ screens
 |__ services/
 
 ```
@@ -113,8 +118,9 @@ src
 ***
 
 ## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+These ideas may change, most likely depending on how long MVP takes but also if it makes sense to the structure and vision of the project.
+- Subcomments
+- Advanced rich text formatting
 
 ***
 
@@ -124,4 +130,4 @@ src
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+![alt](https://media.giphy.com/media/5x89XRx3sBZFC/giphy.gif)
