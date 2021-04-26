@@ -61,7 +61,7 @@ Basically, this is going to be a stripped down variant of reddit with inpiration
 
 #### Component Tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+[Component Tree Whimsical](https://whimsical.com/p4-8kEnM1m3iSeUmaiGtgZch3)
 
 #### Component Architecture
 
