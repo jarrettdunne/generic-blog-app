@@ -27,11 +27,6 @@ Basically, this is going to be a stripped down variant of reddit with inpiration
 
 ## MVP
 
-The **SoDoSoPa** MVP
-
-
-<br>
-
 ### Goals
 
 - _Full CRUD on the front and back ends_
@@ -90,11 +85,28 @@ src
 
 #### Time Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                  |    H     |      3hrs      |     3hrs      |    3hrs     |
+| React app setup           |    H     |    .25hrs      |     0hrs      |    0hrs     |
+| Airtable Setup            |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Enter sample data in API  |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Form component setup      |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Display component setup   |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Display clickable recipes |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Dropdown functionality    |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Navbar component setup    |    H     |     .5hrs      |     0hrs      |    0hrs     |
+| Form add component        |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Form edit component       |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Link / route components   |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Form input parsing        |    H     |      3hrs      |     0hrs      |    0hrs     |
+| GET data from API         |    H     |      2hrs      |     0hrs      |    0hrs     |
+| POST data to API          |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Form Add CSS              |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Form Edit CSS             |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Home page CSS             |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Display CSS               |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Total                     |    H     |  37.75hrs      |     0hrs      |    0hrs     |
 
 <br>
 
