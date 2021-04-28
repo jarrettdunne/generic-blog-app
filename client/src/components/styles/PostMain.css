@@ -1,5 +1,18 @@
 .post-wrapper {
-    border: solid black 1px;
-    width: 600px;
+    border: solid black 2px;
     height: 200px;
+    width: 600px;
+    margin: 5px 0;
+}
+
+.post-bar {
+    height: 100%;
+    width: 45px;
+    /* border-right: solid black 1px; */
+    background-color: #ECECEC;
+}
+
+.icon img {
+    max-width: 25px;
+    max-height: 25px;
 }
