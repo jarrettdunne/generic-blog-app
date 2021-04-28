@@ -17,7 +17,7 @@ export default class Navbar extends Component {
         return (
             <header className="nav">
                 <div className="nav-logo">
-                    <div>app logo</div>
+                    <Link className='nav-links' to='/'>app logo</Link>
                 </div>
                 <div className="search-wrapper">
                     <form>
@@ -27,7 +27,7 @@ export default class Navbar extends Component {
                         </div>
                     </form>
                 </div>
-                <div className="nav-links">
+                <div className="nav-links nav-links-right">
                     {
                         this.currentUser ?
                             <>

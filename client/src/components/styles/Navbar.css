@@ -19,12 +19,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
 }
-
+.nav-links,
 .nav-links a {
     color: #f7f7f8;
     text-decoration: none;
+}
+
+.nav-links-right {
+    margin-right: 50px;
 }
 
 .search-wrapper {
