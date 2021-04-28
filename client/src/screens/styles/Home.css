@@ -1,0 +1,16 @@
+.home-options-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.home-option {
+    height: 45px;
+    width: 140px;
+    border: solid black 1px;
+}
+
+.home-posts-container {
+    margin-top: 20px;
+}
