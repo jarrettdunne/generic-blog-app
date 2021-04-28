@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import PostMain from '../components/PostMain'
 
@@ -10,7 +11,9 @@ export default function Home() {
     const posts = () => {
         return arr.map((v, i) => (
             <div key={i}>
-                <PostMain />
+                <Link to={`/posts/${v}`}>
+                    <PostMain />
+                </Link>
             </div>
         ))
     }
