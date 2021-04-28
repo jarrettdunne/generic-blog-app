@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
+    z-index: 999;
 }
 
 .nav-logo {
