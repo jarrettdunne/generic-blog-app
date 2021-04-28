@@ -44,6 +44,14 @@ class CommentsController < ApplicationController
       @comment = Comment.find(params[:id])
     end
 
+    def set_user_comment
+      @user = @current_user.posts.find(params[:id])
+    end
+
+    def set_post_comment
+
+    end
+
     # Only allow a list of trusted parameters through.
     def comment_params
       params.require(:comment).permit(:title, :content, :format, :user_id, :post_id, :comment_id)
