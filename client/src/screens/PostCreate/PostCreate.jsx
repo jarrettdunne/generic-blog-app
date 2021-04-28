@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PostEdit() {
+export default function PostCreate() {
     return (
         <div>
             
