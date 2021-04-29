@@ -11,17 +11,17 @@ export default function PostDetail(props) {
     return (
         <div className="post-wrapper post-detail-wrapper">
             <div className="post-bar">
-                <div className="post-bar-like icon">
-                    <img src={heartIcon} alt="heart" />
+                <div className="post-bar-like">
+                    <img className="icon" src={heartIcon} alt="heart" />
                 </div>
-                <div className="post-bar-comment icon">
-                    <img src={commentIcon} alt="comment" />
+                <div className="post-bar-comment">
+                    <img className="icon" src={commentIcon} alt="comment" />
                 </div>
-                <div className="post-bar-saved icon">
-                    <img src={bookmarkIcon} alt="bookmark" />
+                <div className="post-bar-saved">
+                    <img className="icon" src={bookmarkIcon} alt="bookmark" />
                 </div>
-                <div className="post-bar-share icon">
-                    <img src={shareIcon} alt="share" />
+                <div className="post-bar-share">
+                    <img className="icon" src={shareIcon} alt="share" />
                 </div>
             </div>
             <div className="post-contents">
