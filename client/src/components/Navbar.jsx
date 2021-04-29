@@ -25,7 +25,6 @@ export default function Navbar(props) {
                 {
                     currentUser ?
                         <>
-                            <p>{currentUser.username}</p>
                             <button onClick={handleLogout}>Logout</button>
                         </>
                         :
@@ -42,7 +41,7 @@ export default function Navbar(props) {
                     currentUser &&
                     <>
                         <Link to='/user'>
-                            <img src={account} alt=""/>
+                            <img className="account-icon" src={account} alt=""/>
                         </Link>
                     </>
                 }
