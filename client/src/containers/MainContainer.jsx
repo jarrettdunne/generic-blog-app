@@ -34,7 +34,7 @@ export default function MainContainer(props) {
                 <PostEdit />
             </Route>
             <Route path='/posts/:id'>
-                <PostDetail />
+                <PostDetail posts={posts} />
             </Route>
             <Route path='/user'>
                 <UserHome />

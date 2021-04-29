@@ -1,4 +1,5 @@
 import React from 'react'
+import { useParams } from 'react-router'
 
 import bookmarkIcon from '../assests/bookmark_border_black_48dp.svg'
 import commentIcon from '../assests/mode_comment_black_48dp.svg'
@@ -8,10 +9,13 @@ import shareIcon from '../assests/share_black_48dp.svg'
 import './styles/PostDetail.css'
 
 export default function PostDetail(props) {
-    const { post } = props
+    const params = useParams()
+    const { id } = params
+    const { posts } = props
+    const post = posts.find((i) => parseInt(i.id) === parseInt(id))
     return (
         <div>
-            <div className="post-wrapper home-post">
+            <div className="post-wrapper">
                 <div className="post-bar">
                     <div className="post-bar-like">
                         <img className="icon" src={heartIcon} alt="heart"/>
