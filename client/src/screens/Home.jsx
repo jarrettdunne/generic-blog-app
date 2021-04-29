@@ -24,10 +24,12 @@ export default function Home() {
     return (
         <div className="home">
             <div className="home-options-container">
-                <div className="home-option">
-                    <img className="icon" src={add} alt="add"/>
-                    Create a post
-                </div>
+                <Link to='/posts/create'>
+                    <div className="home-option">
+                        <img className="icon" src={add} alt="add"/>
+                        Create a post
+                    </div>
+                </Link>
                 <div className="home-option">
                     Treding
                     <img className="icon" src={trend} alt=""/>
