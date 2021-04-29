@@ -13,6 +13,9 @@
     height: 45px;
     width: 140px;
     border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-posts-container {
