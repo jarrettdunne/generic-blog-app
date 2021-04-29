@@ -1,5 +1,5 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Switch, Route, useHistory } from 'react-router-dom'
 
 import Home from '../screens/Home'
 import PostCreate from '../screens/PostCreate'
@@ -7,7 +7,24 @@ import PostDetail from '../screens/PostDetail'
 import PostEdit from '../screens/PostEdit'
 import UserHome from '../screens/UserHome'
 
-export default function MainContainer() {
+import { getAllPosts } from '../services/posts'
+// import { deleteFood, getAllFoods, postFood, putFood } from '../services/foods'
+
+export default function MainContainer(props) {
+    const [posts, setPosts] = useState([])
+
+    const history = useHistory()
+    const { currentUser } = props
+
+    useEffect(() => {
+        const fetchPosts = async () => {
+            const postData = await getAllPosts()
+            setPosts(postData)
+        }
+        fetchPosts()
+    }, [])
+
+
     return (
         <Switch>
             <Route path='/posts/create'>
@@ -23,7 +40,7 @@ export default function MainContainer() {
                 <UserHome />
             </Route>
             <Route path='/'>
-                <Home />
+                <Home posts={posts} />
             </Route>
         </Switch>
     )
