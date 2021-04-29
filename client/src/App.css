@@ -2,6 +2,10 @@
   font-family: Lato;
 }
 
+body {
+  background-color: #E8E8E8;
+}
+
 .App {
   text-align: center;
 }
