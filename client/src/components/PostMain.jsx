@@ -15,11 +15,12 @@ export default class PostMain extends Component {
                     <div className="post-bar-like">
                         <img className="icon" src={heartIcon} alt="heart"/>
                     </div>
-                    <div className="post-bar-comment">
-                        <img className="icon" src={commentIcon} alt="comment"/>
-                    </div>
                     <div className="post-bar-saved">
                         <img className="icon" src={bookmarkIcon} alt="bookmark"/>
+                    </div>
+                    <hr/>
+                    <div className="post-bar-comment">
+                        <img className="icon" src={commentIcon} alt="comment"/>
                     </div>
                     <div className="post-bar-share">
                         <img className="icon" src={shareIcon} alt="share"/>
