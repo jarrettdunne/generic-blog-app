@@ -24,20 +24,24 @@ export default function Home() {
     return (
         <div className="home">
             <div className="home-options-container">
-                <Link to='/posts/create'>
+                <Link className="links" to='/posts/create'>
                     <div className="home-option">
                         <img className="icon" src={add} alt="add"/>
                         Create a post
                     </div>
                 </Link>
-                <div className="home-option">
-                    Treding
-                    <img className="icon" src={trend} alt=""/>
-                </div>
-                <div className="home-option">
-                    Only Friends
-                    <img className="icon" src={friend} alt=""/>
-                </div>
+                <Link className="links">
+                    <div className="home-option middle">
+                        Treding
+                        <img className="icon" src={trend} alt=""/>
+                    </div>
+                </Link>
+                <Link className="links" >
+                    <div className="home-option">
+                        Only Friends
+                        <img className="icon" src={friend} alt=""/>
+                    </div>
+                </Link>
             </div>
             <div className="home-posts-container">
                 {posts()}
