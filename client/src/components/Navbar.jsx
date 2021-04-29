@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import searchImg from '../assests/search-icon.png'
+import searchImg from '../assests/search_black_48dp.svg'
 
 import './styles/Navbar.css'
 
