@@ -11,7 +11,7 @@ import './styles/Home.css'
 export default function Home(props) {
     const posts = () => {
         return props.posts.map((v, i) => (
-            <div key={i}>
+            <div className="home-posts-container-item" key={i}>
                 <Link to={`/posts/${v}`}>
                     <PostMain post={v}/>
                 </Link>
