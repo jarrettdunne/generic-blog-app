@@ -5,9 +5,11 @@ import commentIcon from '../assests/comment-icon.png'
 import heartIcon from '../assests/heart-icon.png'
 import shareIcon from '../assests/share-icon.png'
 
+import './styles/PostDetail.css'
+
 export default function PostDetail(props) {
     return (
-        <div className="post-wrapper">
+        <div className="post-wrapper post-detail-wrapper">
             <div className="post-bar">
                 <div className="post-bar-like icon">
                     <img src={heartIcon} alt="heart" />
