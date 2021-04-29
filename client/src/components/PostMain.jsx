@@ -10,7 +10,7 @@ import './styles/PostMain.css'
 export default class PostMain extends Component {
     render() {
         return (
-            <div className="post-wrapper">
+            <div className="post-wrapper home-post">
                 <div className="post-bar">
                     <div className="post-bar-like icon">
                         <img src={heartIcon} alt="heart"/>

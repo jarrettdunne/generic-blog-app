@@ -1,5 +1,6 @@
 .post-wrapper {
-    border: solid black 2px;
+    border: solid rgb(150, 150, 150) 2px;
+    border-radius: 3px;
     height: 200px;
     /* width: 100%; */
     margin: 5px 0;
@@ -20,4 +21,9 @@
 .post-contents {
     display: flex;
     width: 500px;
+}
+
+.home-post:hover {
+    border: solid rgb(58, 58, 58) 2px;
+    border-radius: 3px;
 }
