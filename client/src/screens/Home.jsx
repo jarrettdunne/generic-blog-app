@@ -8,14 +8,12 @@ import trend from '../assests/trending_up_black_48dp.svg'
 import friend from '../assests/person_black_48dp.svg'
 import './styles/Home.css'
 
-export default function Home() {
-    const arr = [...Array(10).keys()]
-
+export default function Home(props) {
     const posts = () => {
-        return arr.map((v, i) => (
+        return props.posts.map((v, i) => (
             <div key={i}>
                 <Link to={`/posts/${v}`}>
-                    <PostMain />
+                    <PostMain post={v}/>
                 </Link>
             </div>
         ))
