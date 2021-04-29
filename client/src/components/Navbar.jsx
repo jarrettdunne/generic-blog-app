@@ -35,7 +35,14 @@ export default class Navbar extends Component {
                                 <button onClick={this.handleLogout}>Logout</button>
                             </>
                             :
-                            <Link to='/login'>Login/Register</Link>
+                            <>
+                                <Link to='/login'>
+                                    <div className="nav-sign-in">Sign In</div>
+                                </Link>
+                                <Link to='/register'>
+                                    <div className="nav-sign-up">Sign Up</div>
+                                </Link>
+                            </>
                     }
                     {
                         this.currentUser &&

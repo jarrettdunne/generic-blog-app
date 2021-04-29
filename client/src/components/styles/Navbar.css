@@ -60,3 +60,42 @@
 .search-input {
     outline: none;
 }
+
+.nav-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #147EFB;
+    box-sizing: border-box;
+    border-radius: 18px;
+    color: #147EFB;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-bottom: 4px;
+}
+
+.nav-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 36px;
+    background: #147EFB;
+    box-sizing: border-box;
+    border-radius: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-bottom: 4px;
+}
+
+.nav-sign-in:hover {
+    background: #b5b5b5;
+}
+
+.nav-sign-up:hover {
+    background: #449bff;
+}
