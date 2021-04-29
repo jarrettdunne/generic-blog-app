@@ -1,9 +1,9 @@
 import React from 'react'
 
-import bookmarkIcon from '../assests/bookmark-icon.png'
-import commentIcon from '../assests/comment-icon.png'
-import heartIcon from '../assests/heart-icon.png'
-import shareIcon from '../assests/share-icon.png'
+import bookmarkIcon from '../assests/bookmark_border_black_48dp.svg'
+import commentIcon from '../assests/mode_comment_black_48dp.svg'
+import heartIcon from '../assests/favorite_border_black_48dp.svg'
+import shareIcon from '../assests/share_black_48dp.svg'
 
 import './styles/PostDetail.css'
 
