@@ -8,11 +8,15 @@
 .home-option {
     height: 35px;
     width: 140px;
-    border: solid black 1px;
+    border: solid rgb(150, 150, 150) 2px;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home-option:hover {
+    border: solid rgb(58, 58, 58) 2px;
 }
 
 .middle {
