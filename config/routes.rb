@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
 
-  resources :users do
-    resources :posts do
-      resources :comments
-    end
-  end
+  resources :comments
+  resources :posts
+  resources :users
 end
