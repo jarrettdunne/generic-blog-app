@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Comment.destroy_all
 Post.destroy_all
 User.destroy_all
-# Comment.destroy_all
 
 user_list = [
     {
@@ -23,7 +23,7 @@ lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 @user = User.create!(username: 'user1', email: 'user1@email.com', password: '123456')
 puts "#{User.count} users created."
 
-Post.create!(title: 'This is a blog 1', content: lorem, format: 'none', user: @user)
+@post1 = Post.create!(title: 'This is a blog 1', content: lorem, format: 'none', user: @user)
 Post.create!(title: 'This is a blog 2', content: lorem, format: 'none', user: @user)
 Post.create!(title: 'This is a blog 3', content: lorem, format: 'none', user: @user)
 Post.create!(title: 'This is a blog 4', content: lorem, format: 'none', user: @user)
@@ -31,3 +31,6 @@ Post.create!(title: 'This is a blog 5', content: lorem, format: 'none', user: @u
 Post.create!(title: 'This is a blog 6', content: lorem, format: 'none', user: @user)
 Post.create!(title: 'This is a blog 7', content: lorem, format: 'none', user: @user)
 puts "#{Post.count} posts created."
+
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', format: '{}', user: @user, post: @post1)
+puts "#{Comment.count} comments created."
