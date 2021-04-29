@@ -23,13 +23,8 @@
 > I'm seeing but not connecting the dots.
 
 
-1. 
-https://www.devwalks.com/lets-build-instagram-with-rails-like-me-and-tell-me-im-beautiful/
-2. 
-https://www.codementor.io/ruby-on-rails/tutorial/threaded-comments-polymorphic-associations
-3. 
-https://bogotobogo.com/RubyOnRails/RubyOnRails_Blog_with_post_and_comment.php
-4. 
-https://edgeguides.rubyonrails.org/association_basics.html
-5. 
-https://stackoverflow.com/questions/24470896/add-comment-to-user-and-post-models-ruby-on-rails
+1. https://www.devwalks.com/lets-build-instagram-with-rails-like-me-and-tell-me-im-beautiful/
+2. https://www.codementor.io/ruby-on-rails/tutorial/threaded-comments-polymorphic-associations
+3. https://bogotobogo.com/RubyOnRails/RubyOnRails_Blog_with_post_and_comment.php
+4. https://edgeguides.rubyonrails.org/association_basics.html
+5. https://stackoverflow.com/questions/24470896/add-comment-to-user-and-post-models-ruby-on-rails
