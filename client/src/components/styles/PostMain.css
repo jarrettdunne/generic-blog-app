@@ -16,3 +16,8 @@
     max-width: 25px;
     max-height: 25px;
 }
+
+.post-contents {
+    display: flex;
+    width: 500px;
+}
