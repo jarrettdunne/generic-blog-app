@@ -18,8 +18,16 @@ user_list = [
     }
 ]
 
+lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
 @user = User.create!(username: 'user1', email: 'user1@email.com', password: '123456')
 puts "#{User.count} users created."
 
-Post.create!(title: 'my first pblog', content: 'here is the content that is for my blog.', format: 'none', user: @user)
+Post.create!(title: 'This is a blog 1', content: lorem, format: 'none', user: @user)
+Post.create!(title: 'This is a blog 2', content: lorem, format: 'none', user: @user)
+Post.create!(title: 'This is a blog 3', content: lorem, format: 'none', user: @user)
+Post.create!(title: 'This is a blog 4', content: lorem, format: 'none', user: @user)
+Post.create!(title: 'This is a blog 5', content: lorem, format: 'none', user: @user)
+Post.create!(title: 'This is a blog 6', content: lorem, format: 'none', user: @user)
+Post.create!(title: 'This is a blog 7', content: lorem, format: 'none', user: @user)
 puts "#{Post.count} posts created."
