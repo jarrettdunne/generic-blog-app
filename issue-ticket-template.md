@@ -1,31 +1,41 @@
 # PROJECT ISSUE TICKET
 
+> Copy and paste the raw MD code of this template **into an issue ticket in your project repo**, then replace the quote blocks with your detailed, clear descriptions.
+
 ## Unexpected Behavior
 
-> I am having trouble setting up my backend. It's not that I can't get things to work (i.e. CRUD), it's mainly that I don't know the best way to setup the Users>Posts>Comments model and also how this would translate to the frontend. Becuase I can have a triple nested resource routes but I don't think that's entirely necessary.
+> Describe your issue, question, or bug with a clear and concise description.
 
 ## Expected Behavior
 
-> Efficient backend arhitecture that is setup to accomodate additional features such as friends and sub comments.
+> Give a clear and concise description of what you *expected* to happen.
 
 ## Reproduce the Error
 
-> It's not really an error.
+> Describe the steps we can take to reproduce the error, i.e.:
 
+```md
+1. Clone this repo.
+2. Run `npm start`.
+3. Navigate to the landing page.
+4. Click on _____, which should return the API data set.
+5. Scroll down to _____.
+6. See the subsequent error in the console.
+```
 
 ## Documentation
 
-> It's not really an error.
+> Include the exact error message, and if helpful, any supplemental documentation, such as screen captures.
 
+```md
+Copy and paste the contents of the error message here.
+```
 
 ## Attempted Resolution
 
-> I'm seeing but not connecting the dots.
+> If you haven't already, **Google your error message now**. See if those error messages return an answer. Include at least 2 resources you've tried to consult such as walk-throughs, stack overflow articles, and other discussion threads related to your error.
 
 ```md
-1. https://www.devwalks.com/lets-build-instagram-with-rails-like-me-and-tell-me-im-beautiful/
-2. https://www.codementor.io/ruby-on-rails/tutorial/threaded-comments-polymorphic-associations
-3. https://bogotobogo.com/RubyOnRails/RubyOnRails_Blog_with_post_and_comment.php
-4. https://edgeguides.rubyonrails.org/association_basics.html
-5. https://stackoverflow.com/questions/24470896/add-comment-to-user-and-post-models-ruby-on-rails
+1. Link 1
+2. Link 2
 ```
