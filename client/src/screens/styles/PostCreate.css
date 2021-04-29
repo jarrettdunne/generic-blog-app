@@ -44,6 +44,7 @@
   
   .post-create-submit:hover {
     background: #449bff;
+    cursor: pointer;
   }
   
   .post-create-submit:active {
@@ -57,5 +58,5 @@
   
   .post-create-submit {
     background: #147EFB;
-    border-radius: 5px;
+    border-radius: 3rem;
   }
