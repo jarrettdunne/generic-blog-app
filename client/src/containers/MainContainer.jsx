@@ -10,14 +10,14 @@ import UserHome from '../screens/UserHome'
 export default function MainContainer() {
     return (
         <Switch>
+            <Route path='/posts/create'>
+                <PostCreate />
+            </Route>
             <Route path='/posts/:id/edit'>
                 <PostEdit />
             </Route>
             <Route path='/posts/:id'>
                 <PostDetail />
-            </Route>
-            <Route path='/posts/create'>
-                <PostCreate />
             </Route>
             <Route path='/user'>
                 <UserHome />
