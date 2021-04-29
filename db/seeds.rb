@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.destroy_all
 Post.destroy_all
+User.destroy_all
 # Comment.destroy_all
 
 user_list = [
@@ -21,5 +21,5 @@ user_list = [
 @user = User.create!(username: 'user1', email: 'user1@email.com', password: '123456')
 puts "#{User.count} users created."
 
-Post.create!(title: 'my first pblog', content: 'here is the content that is for my blog.', format: 'none', user: @user[0])
+Post.create!(title: 'my first pblog', content: 'here is the content that is for my blog.', format: 'none', user: @user)
 puts "#{Post.count} posts created."
