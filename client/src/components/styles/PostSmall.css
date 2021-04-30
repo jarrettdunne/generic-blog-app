@@ -1,0 +1,13 @@
+.post-small-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-controls,
+.post-controls a {
+    padding: 5px;
+}
+
+.post-controls a:hover {
+    border-bottom: solid black 1px;
+}
