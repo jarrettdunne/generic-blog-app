@@ -19,14 +19,11 @@ a {
     background-color: white;
     justify-content: center;
     align-items: center;
+    margin-right:5px;
 }
 
 .home-option:hover {
     border: solid rgb(58, 58, 58) 2px;
-}
-
-.middle {
-    margin: 0 5px;
 }
 
 .home-posts-container {
