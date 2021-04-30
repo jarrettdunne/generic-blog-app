@@ -40,7 +40,7 @@ export default function Navbar(props) {
                 {
                     currentUser &&
                     <>
-                        <Link to='/user/posts'>
+                        <Link to={`/user/${currentUser.id}/posts`}>
                             <img className="account-icon" src={account} alt=""/>
                         </Link>
                     </>
