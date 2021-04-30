@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
 
-  # custom route / method
+  # custom route / method for creating a post?
   resources :users
   
   resources :posts, except: :show do
