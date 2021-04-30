@@ -17,7 +17,7 @@ lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 puts "#{User.count} users created."
 
 @post1 = Post.create!(title: 'This is a blog 1', content: lorem, user: @user1)
-Post.create!(title: 'This is a blog 2', content: lorem, user: @user1)
+@post2 = Post.create!(title: 'This is a blog 2', content: lorem, user: @user1)
 Post.create!(title: 'This is a blog 3', content: lorem, user: @user1)
 Post.create!(title: 'This is a blog 4', content: lorem, user: @user1)
 Post.create!(title: 'This is a blog 5', content: lorem, user: @user2)
@@ -25,5 +25,14 @@ Post.create!(title: 'This is a blog 6', content: lorem, user: @user2)
 Post.create!(title: 'This is a blog 7', content: lorem, user: @user2)
 puts "#{Post.count} posts created."
 
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', format: '{}', user: @user1, post: @post1)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
 puts "#{Comment.count} comments created."
