@@ -14,7 +14,7 @@ export default function MainContainer(props) {
     const [posts, setPosts] = useState([])
 
     const history = useHistory()
-    const { currentUser } = props
+    // const { currentUser } = props
 
     useEffect(() => {
         const fetchPosts = async () => {

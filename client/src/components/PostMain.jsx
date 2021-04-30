@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import bookmarkIcon from '../assests/bookmark_border_black_48dp.svg'
 import commentIcon from '../assests/mode_comment_black_48dp.svg'
