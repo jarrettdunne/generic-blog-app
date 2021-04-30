@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
 
-  resources :comments
-  resources :posts
+  # custom route / method
   resources :users
+  
+  resources :posts, except: :show do
+    resources :comments, only: :create
+  end
 end
