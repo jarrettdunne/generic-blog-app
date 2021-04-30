@@ -9,6 +9,8 @@ import friend from '../assests/person_black_48dp.svg'
 import './styles/Home.css'
 
 export default function Home(props) {
+    const { currentUser } = props
+
     const posts = () => {
         return props.posts.map((v, i) => (
             <div className="home-posts-container-item" key={i}>
@@ -22,12 +24,18 @@ export default function Home(props) {
     return (
         <div className="home">
             <div className="home-options-container">
-                <Link className="links" to='/posts/create'>
-                    <div className="home-option">
-                        <img className="icon" src={add} alt="add"/>
-                        Create a post
-                    </div>
-                </Link>
+                {
+                    currentUser 
+                    ?
+                    <Link className="links" to='/posts/create'>
+                        <div className="home-option">
+                            <img className="icon" src={add} alt="add"/>
+                            Create a post
+                        </div>
+                    </Link>
+                    :
+                    null
+                }   
                 <Link className="links">
                     <div className="home-option middle">
                         Treding
