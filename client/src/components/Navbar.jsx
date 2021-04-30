@@ -25,7 +25,7 @@ export default function Navbar(props) {
                 {
                     currentUser ?
                         <>
-                            <button onClick={handleLogout}>Logout</button>
+                            <button className="nav-logout-button" onClick={handleLogout}>logout</button>
                         </>
                         :
                         <>
