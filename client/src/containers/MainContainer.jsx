@@ -7,7 +7,7 @@ import PostDetail from '../screens/PostDetail'
 import PostEdit from '../screens/PostEdit'
 import UserHome from '../screens/UserHome'
 
-import { getAllPosts } from '../services/posts'
+import { getAllPosts, postPost } from '../services/posts'
 // import { deleteFood, getAllFoods, postFood, putFood } from '../services/foods'
 
 export default function MainContainer(props) {
@@ -24,11 +24,17 @@ export default function MainContainer(props) {
         fetchPosts()
     }, [])
 
+    const handleCreate = async (formData) => {
+        const data = await postPost(formData);
+        setPosts(prevState => [...prevState, data])
+        history.push('/')
+    }
+
 
     return (
         <Switch>
             <Route path='/posts/create'>
-                <PostCreate />
+                <PostCreate handleCreate={handleCreate} />
             </Route>
             <Route path='/posts/:id/edit'>
                 <PostEdit />
