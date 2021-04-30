@@ -33,10 +33,10 @@ export default function PostDetail(props) {
                 </div>
                 <div className="post-contents">
                     <div className="post-header">
-                        <div className="post-header-about">{post.created_at}</div>
-                        <div className="post-header-title">{post.title}</div>
+                        <div className="post-header-about">{post && post.created_at}</div>
+                        <div className="post-header-title">{post && post.title}</div>
                     </div>
-                    <div className="post-content">{post.content}</div>
+                    <div className="post-content">{post && post.content}</div>
                 </div>
             </div>
             <div className="comments-wrapper">
