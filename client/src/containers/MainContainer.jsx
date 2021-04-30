@@ -8,7 +8,6 @@ import PostEdit from '../screens/PostEdit'
 import UserHome from '../screens/UserHome'
 
 import { getAllPosts, postPost } from '../services/posts'
-// import { deleteFood, getAllFoods, postFood, putFood } from '../services/foods'
 
 export default function MainContainer(props) {
     const [posts, setPosts] = useState([])
@@ -33,6 +32,9 @@ export default function MainContainer(props) {
 
     return (
         <Switch>
+            <Route path='/user/:id/posts'>
+                <UserHome />
+            </Route>
             <Route path='/posts/create'>
                 <PostCreate handleCreate={handleCreate} />
             </Route>
@@ -41,9 +43,6 @@ export default function MainContainer(props) {
             </Route>
             <Route path='/posts/:id'>
                 <PostDetail posts={posts} />
-            </Route>
-            <Route path='/user'>
-                <UserHome />
             </Route>
             <Route path='/'>
                 <Home posts={posts} />
