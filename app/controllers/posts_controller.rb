@@ -41,6 +41,13 @@ class PostsController < ApplicationController
     @post.destroy
   end
 
+  # GET /user/:id/posts
+  def get_user_posts
+    @user_posts = User.find(params[:id]).posts
+
+    render json: @user_posts
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -50,6 +57,7 @@ class PostsController < ApplicationController
     def set_user_post
       @post = @current_user.posts.find(params[:id])
     end
+
 
     # Only allow a list of trusted parameters through.
     def post_params
