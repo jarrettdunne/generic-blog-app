@@ -102,7 +102,20 @@
     background: #449bff;
 }
 
-.account-icon {
+.nav-logout-button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.nav-logout-button:hover {
+    border-bottom: solid black 1px;
+}
+
+/* .account-icon {
     border: #b5b5b5 solid 2px;
     border-radius: 3rem;
     margin: 3px;
@@ -110,4 +123,4 @@
 .account-icon:hover {
     border: #000000 solid 2px;
     border-radius: 3rem;
-}
+} */
