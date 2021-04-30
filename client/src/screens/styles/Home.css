@@ -16,6 +16,7 @@ a {
     border: solid rgb(150, 150, 150) 2px;
     border-radius: 3px;
     display: flex;
+    background-color: white;
     justify-content: center;
     align-items: center;
 }
