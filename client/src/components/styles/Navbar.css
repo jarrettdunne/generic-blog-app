@@ -15,7 +15,9 @@
     align-items: center;
     margin-left: 50px;
 }
-
+.nav-logo a {
+    font-size: 32px;
+}
 .nav-links {
     display: flex;
     justify-content: center;
