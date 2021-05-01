@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import UserOptions from './UserOptions'
+
 import account from '../assests/account_circle_black_48dp.svg'
 import searchImg from '../assests/search_black_48dp.svg'
 
@@ -28,14 +30,7 @@ export default function Navbar(props) {
                             <button className="nav-logout-button" onClick={handleLogout}>logout</button>
                         </>
                         :
-                        <>
-                            <Link to='/login'>
-                                <div className="nav-sign-in">Sign In</div>
-                            </Link>
-                            <Link to='/register'>
-                                <div className="nav-sign-up">Sign Up</div>
-                            </Link>
-                        </>
+                        <UserOptions />
                 }
                 {
                     currentUser &&
