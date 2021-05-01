@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    render json: @post
+    render json: @post.as_json(include: { comments: { only: [:user_id, :content, :created_at]} })
   end
 
   # POST /posts
