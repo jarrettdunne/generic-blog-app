@@ -1,3 +1,5 @@
+import api from './api-helper';
+
 export const getAllPostComments = async (postId) => {
     const resp = await api.get(`/posts/${postId}/comments`);
     return resp.data;
