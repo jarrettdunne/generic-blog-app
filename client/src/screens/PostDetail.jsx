@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 
 import { getOnePost } from '../services/posts'
+
+import CommentCreate from '../components/CommentCreate'
 import PostMain from '../components/PostMain'
 import Comment from '../components/Comment'
 
@@ -10,6 +12,7 @@ import './styles/PostDetail.css'
 export default function PostDetail(props) {
     const params = useParams()
     const [ post, setPost ] = useState(null)
+    const { currentUser } = props
 
     useEffect(() => {
         const fetchPost = async (id) => {
@@ -24,12 +27,7 @@ export default function PostDetail(props) {
             <div className="post-detail-wrapper" >
                 {post && <PostMain post={post} />}
             </div>
-            <form className="create-comment-wrapper">
-                <textarea className="create-comment-textarea" placeholder="What are your thought?" name="" id="" cols="0" rows="0"></textarea>
-                <div className="comment-create-options">
-                    <input className="comment-create-submit" type="submit" value="Comment" />
-                </div>
-            </form>
+            <CommentCreate currentUser={currentUser} />
             {post &&
                 post.comments.length !== 0
                 ?
