@@ -5,7 +5,12 @@ export const getAllPostComments = async (postId) => {
     return resp.data;
   }
   
-  export const addComment = async (postId, commentId) => {
+  export const getComment = async (postId, commentId) => {
     const resp = await api.get(`/posts/${postId}/comments/${commentId}`);
+    return resp.data;
+  }
+  
+  export const postComment = async (postId, commentData) => {
+    const resp = await api.post(`/posts/${postId}/comments`, { comment: commentData });
     return resp.data;
   }
