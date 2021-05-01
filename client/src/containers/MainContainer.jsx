@@ -6,6 +6,7 @@ import PostCreate from '../screens/PostCreate'
 import PostDetail from '../screens/PostDetail'
 import PostEdit from '../screens/PostEdit'
 import UserHome from '../screens/UserHome'
+import CommentCreate from '../components/CommentCreate'
 
 import { getAllPosts, postPost, putPost, deletePost } from '../services/posts'
 
@@ -55,7 +56,7 @@ export default function MainContainer(props) {
                 <PostEdit posts={posts} handleEdit={handleEdit} />
             </Route>
             <Route path='/posts/:id'>
-                <PostDetail posts={posts} />
+                <PostDetail currentUser={currentUser} posts={posts} />
             </Route>
             <Route path='/'>
                 <Home currentUser={currentUser} posts={posts} />
