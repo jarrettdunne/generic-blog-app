@@ -1,0 +1,24 @@
+.comment-bar {
+    width: 45px;
+    background-color: #ECECEC;
+}
+
+.comment-wrapper {
+    display: flex;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+}
+.comment-time {
+    font-size: 10px;
+}
+
+.comment-username {
+    font-size: 12px;
+}
+
+.comment-content {
+    width: 100%;
+}
