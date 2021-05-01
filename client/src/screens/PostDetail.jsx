@@ -1,11 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 
-import bookmarkIcon from '../assests/bookmark_border_black_48dp.svg'
-import commentIcon from '../assests/mode_comment_black_48dp.svg'
-import heartIcon from '../assests/favorite_border_black_48dp.svg'
-import shareIcon from '../assests/share_black_48dp.svg'
-
+import { getOnePost } from '../services/posts'
 import PostMain from '../components/PostMain'
 import Comment from '../components/Comment'
 
@@ -13,9 +9,15 @@ import './styles/PostDetail.css'
 
 export default function PostDetail(props) {
     const params = useParams()
-    const { id } = params
-    const { posts } = props
-    const post = posts.find((i) => parseInt(i.id) === parseInt(id))
+    const [ post, setPost ] = useState(null)
+
+    useEffect(() => {
+        const fetchPost = async (id) => {
+            const postData = await getOnePost(params.id)
+            setPost(postData)
+        }
+        fetchPost()
+    }, [params.id])
 
     return (
         <div>
