@@ -6,6 +6,9 @@ import commentIcon from '../assests/mode_comment_black_48dp.svg'
 import heartIcon from '../assests/favorite_border_black_48dp.svg'
 import shareIcon from '../assests/share_black_48dp.svg'
 
+import PostMain from '../components/PostMain'
+import Comment from '../components/Comment'
+
 import './styles/PostDetail.css'
 
 export default function PostDetail(props) {
@@ -13,36 +16,31 @@ export default function PostDetail(props) {
     const { id } = params
     const { posts } = props
     const post = posts.find((i) => parseInt(i.id) === parseInt(id))
+
     return (
         <div>
-            <div className="post-wrapper">
-                <div className="post-bar">
-                    <div className="post-bar-like">
-                        <img className="icon" src={heartIcon} alt="heart"/>
-                    </div>
-                    <div className="post-bar-saved">
-                        <img className="icon" src={bookmarkIcon} alt="bookmark"/>
-                    </div>
-                    <hr/>
-                    <div className="post-bar-comment">
-                        <img className="icon" src={commentIcon} alt="comment"/>
-                    </div>
-                    <div className="post-bar-share">
-                        <img className="icon" src={shareIcon} alt="share"/>
-                    </div>
-                </div>
-                <div className="post-contents">
-                    <div className="post-header">
-                        <div className="post-header-about">{post && post.created_at}</div>
-                        <div className="post-header-title">{post && post.title}</div>
-                    </div>
-                    <div className="post-content">{post && post.content}</div>
-                </div>
+            <div className="post-detail-wrapper" >
+                {post && <PostMain post={post} />}
             </div>
-            <div className="comments-wrapper">
-                Comments
-                <div className=""></div>
-            </div>
+            <form className="create-comment-wrapper">
+                <textarea className="create-comment-textarea" placeholder="What are your thought?" name="" id="" cols="0" rows="0"></textarea>
+                <div className="comment-create-options">
+                    <input className="comment-create-submit" type="submit" value="Comment" />
+                </div>
+            </form>
+            {post &&
+                post.comments.length !== 0
+                ?
+                <div className="comments-wrapper">
+                    {
+                        post.comments.map((v, i) => (
+                            <Comment key={i} comment={v} />
+                        ))
+                    }
+                </div>
+                :
+                <div className="comments-wrapper"></div>
+            }
         </div>
     )
 }
