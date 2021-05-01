@@ -21,7 +21,13 @@ export default function PostMain(props) {
                 <hr/>
                 <div className="post-bar-comment">
                     <img className="icon" src={commentIcon} alt="comment" />
-                    {post.comments.length}
+                    {
+                        post.comments
+                        ?
+                        post.comments.length
+                        :
+                        0
+                    }
                 </div>
                 <div className="post-bar-share">
                     <img className="icon" src={shareIcon} alt="share" />
