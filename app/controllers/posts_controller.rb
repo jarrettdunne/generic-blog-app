@@ -5,9 +5,9 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.all
+    @posts = Post.includes(:comments)
     
-    render json: @posts
+    render json: @posts.as_json(include: { comments: { only: [:user_id, :content, :created_at]} })
   end
 
   # GET /posts/1
