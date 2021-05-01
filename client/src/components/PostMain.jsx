@@ -10,20 +10,21 @@ import './styles/PostMain.css'
 export default function PostMain(props) {
     const { post } = props
     return (
-        <div className="post-wrapper home-post">
+        <div className="post-wrapper">
             <div className="post-bar">
                 <div className="post-bar-like">
-                    <img className="icon" src={heartIcon} alt="heart"/>
+                    <img className="icon" src={heartIcon} alt="heart" />
                 </div>
                 <div className="post-bar-saved">
-                    <img className="icon" src={bookmarkIcon} alt="bookmark"/>
+                    <img className="icon" src={bookmarkIcon} alt="bookmark" />
                 </div>
                 <hr/>
                 <div className="post-bar-comment">
-                    <img className="icon" src={commentIcon} alt="comment"/>
+                    <img className="icon" src={commentIcon} alt="comment" />
+                    {post.comments.length}
                 </div>
                 <div className="post-bar-share">
-                    <img className="icon" src={shareIcon} alt="share"/>
+                    <img className="icon" src={shareIcon} alt="share" />
                 </div>
             </div>
             <div className="post-contents">
