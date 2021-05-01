@@ -14,9 +14,11 @@ export default function Home(props) {
     const posts = () => {
         return props.posts.map((v, i) => (
             <div className="home-posts-container-item" key={i}>
-                <Link to={`/posts/${v.id}`}>
-                    <PostMain post={v}/>
-                </Link>
+                <div className="home-post">
+                    <Link to={`/posts/${v.id}`}>
+                        <PostMain post={v}/>
+                    </Link>
+                </div>
             </div>
         ))
     }
