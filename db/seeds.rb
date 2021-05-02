@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Like.destroy_all
 Comment.destroy_all
 Post.destroy_all
 User.destroy_all
@@ -25,14 +26,18 @@ Post.create!(title: 'This is a blog 6', content: lorem, user: @user2)
 Post.create!(title: 'This is a blog 7', content: lorem, user: @user2)
 puts "#{Post.count} posts created."
 
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post1)
-Comment.create!(title: 'My comment', content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post2)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post1)
+Comment.create!(content: 'Lorem ipsum', user: @user1, post: @post2)
 puts "#{Comment.count} comments created."
+
+Like.create!(user: @user1, post: @post1)
+Like.create!(user: @user2, post: @post1)
+puts "#{Like.count} likes created."
