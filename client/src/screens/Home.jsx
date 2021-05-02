@@ -6,6 +6,8 @@ import PostMain from '../components/PostMain'
 import add from '../assests/add_circle_black_48dp.svg'
 import trend from '../assests/trending_up_black_48dp.svg'
 import friend from '../assests/person_black_48dp.svg'
+import clockIcon from  '../assests/schedule_black_48dp.svg'
+import watchIcon from  '../assests/watch_later_black_48dp.svg'
 import './styles/Home.css'
 
 export default function Home(props) {
@@ -24,35 +26,48 @@ export default function Home(props) {
     }
 
     return (
-        <div className="home">
-            <div className="home-options-container">
-                {
-                    currentUser 
-                    ?
-                    <Link className="links" to='/posts/create'>
-                        <div className="home-option">
-                            <img className="icon" src={add} alt="add"/>
-                            Create a post
+        <div className="home-wrapper">
+            <div className="home-trends-wrapper">
+                <div className="home-trends-header">
+                    Trending Topics 
+                </div>
+            </div>
+            <div className="home-posts-wrapper">
+                <div className="home-options-container">
+                    {
+                        currentUser 
+                        ?
+                        <Link className="links" to='/posts/create'>
+                            <div className="home-option">
+                                <img className="icon" src={add} alt="add"/>
+                                Create a post
+                            </div>
+                        </Link>
+                        :
+                        null
+                    }   
+                    <Link className="links">
+                        <div className="home-option middle">
+                            Hot
+                            <img className="icon" src={trend} alt=""/>
                         </div>
                     </Link>
-                    :
-                    null
-                }   
-                <Link className="links">
-                    <div className="home-option middle">
-                        Treding
-                        <img className="icon" src={trend} alt=""/>
-                    </div>
-                </Link>
-                <Link className="links" >
-                    <div className="home-option">
-                        Only Friends
-                        <img className="icon" src={friend} alt=""/>
-                    </div>
-                </Link>
-            </div>
-            <div className="home-posts-container">
-                {posts()}
+                    <Link className="links" >
+                        <div className="home-option">
+                            Newest
+                            <img className="icon" src={watchIcon} alt=""/>
+                        </div>
+                    </Link>
+                    <Link className="links" >
+                        <div className="home-option">
+                            Only Friends
+                            <img className="icon" src={friend} alt=""/>
+                        </div>
+                    </Link>
+                </div>
+                <div className="home-posts-container">
+                    {posts()}
+                </div>
             </div>
         </div>
     )
