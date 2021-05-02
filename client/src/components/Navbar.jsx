@@ -16,11 +16,9 @@ export default function Navbar(props) {
                 <Link className='nav-links' to='/'>b l o g i c</Link>
             </div>
             <div className="search-wrapper">
-                <form>
-                    <div className="search-bar">
-                        <img className="search-img" src={searchImg} alt="seach" />
-                        <input className="search-input" type="text" placeholder="Seach" />
-                    </div>
+                <form className="search-form">
+                    <img className="search-img" src={searchImg} alt="seach" />
+                    <input className="search-input" type="text" placeholder="Seach" />
                 </form>
             </div>
             <div className="nav-links nav-links-right">
