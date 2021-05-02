@@ -1,3 +1,31 @@
+.home-wrapper {
+    display: flex;
+}
+
+.home-posts-wrapper {
+    display: flex;
+    flex-direction: column;
+    left: 300px;
+}
+
+.home-trends-wrapper {
+    height: 400px;
+    width: 300px;
+    border: solid rgb(150, 150, 150) 2px;
+    border-radius: 3px;
+    margin: 0 10px;
+    /* position: fixed; */
+    left: 15vw;
+    background-color: #FFFFFF;
+}
+
+.home-trends-header {
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .home-options-container {
     display: flex;
     justify-content: flex-start;
@@ -28,6 +56,7 @@ a {
 
 .home-post {
     border: solid rgb(150, 150, 150) 2px;
+    border-radius: 3px;
     margin: 5px 0;
 }
 .home-post:hover {
