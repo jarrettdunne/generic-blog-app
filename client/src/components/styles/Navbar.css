@@ -15,6 +15,11 @@
     align-items: center;
     margin-left: 50px;
 }
+
+.account-icon:hover {
+    background-color: #bbbbbb;
+    border-radius: 3px;
+}
 .nav-logo a {
     font-size: 32px;
 }
