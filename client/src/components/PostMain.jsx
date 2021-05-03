@@ -19,7 +19,7 @@ export default function PostMain(props) {
     const [likes, setLikes] = useState(post.likes.length)
     const [save, setSave] = useState(true)
     const [saveIcon, setSaveIcon] = useState(unsavedIcon)
-
+    
     useEffect(() => {
         const id = post.likes.filter(i => i?.user_id === currentUser?.id)
         if (id[0]?.user_id) {
@@ -94,7 +94,7 @@ export default function PostMain(props) {
             </div>
             <div className="post-contents">
                 <div className="post-header">
-                    <div className="post-header-about">{timeSince(post.created_at)}</div>
+                    <div className="post-header-about">posted {timeSince(post.created_at)}</div>
                     <div className="post-header-title">{post.title}</div>
                 </div>
                 <div className="post-content">{post.content}</div>
