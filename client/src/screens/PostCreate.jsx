@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import UserOptions from '../components/UserOptions'
+
 import './styles/PostCreate.css'
 
 export default function PostCreate(props) {
@@ -7,7 +9,7 @@ export default function PostCreate(props) {
         title: ''
     })
     // const { name } = formData;
-    const { handleCreate } = props;
+    const { currentUser, handleCreate } = props;
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -28,7 +30,15 @@ export default function PostCreate(props) {
                 <div className="user-create-form-name">Create a post</div>
                 <input className="post-create-title" required type="text" name="title" placeholder="title (required)" onChange={handleChange} />
                 <textarea className="post-create-content" required name="content" placeholder="text (required)" cols="30" rows="10" onChange={handleChange} ></textarea>
-                <input className="post-create-submit" type="submit" value="Post" />
+                <div className="comment-create-options">
+                    {
+                        currentUser
+                            ?
+                            <input className="post-create-submit" type="submit" value="Post" />
+                            :
+                            <UserOptions />
+                    }
+                </div>
             </form>
         </div>
     )

@@ -45,7 +45,7 @@
 
 .comment-create-options {
     width: 100%;
-    background-color: #ECECEC;
+    /* background-color: #ECECEC; */
     display: flex;
     justify-content: flex-end;
 }
