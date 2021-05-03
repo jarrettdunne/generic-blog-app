@@ -34,11 +34,12 @@
   width: 95px;
   background: #147EFB;
   box-sizing: border-box;
-  border-radius: 18px;
+  border-radius: 3rem;
   color: #FFFFFF;
   font-weight: 500;
   padding-bottom: 4px;
-  margin-top: 20px;
+  align-self: flex-end;
+  cursor: pointer;
   align-self: flex-end;
 }
   
@@ -55,7 +56,3 @@
     outline: 0;
   }
   
-  .post-create-submit {
-    background: #147EFB;
-    border-radius: 5px;
-  }
