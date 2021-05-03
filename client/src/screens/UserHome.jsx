@@ -11,7 +11,7 @@ import './styles/UserHome.css'
 export default function UserHome(props) {
     const [userPosts, setUserPosts] = useState([])
     const params = useParams()
-    const { handleDelete } = props
+    const { handleDelete, currentUser } = props
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -23,9 +23,9 @@ export default function UserHome(props) {
 
     const posts = () => {
         return userPosts.map((v, i) => (
-            <div className="home-posts-container-item" key={i}>
+            <div className="home-posts-container-item home-post" key={i}>
                 <Link to={`/posts/${v.id}`}>
-                    <PostSmall handleDelete={handleDelete} post={v} />
+                    <PostSmall handleDelete={handleDelete} currentUser={currentUser} post={v} />
                 </Link>
             </div>
         ))
