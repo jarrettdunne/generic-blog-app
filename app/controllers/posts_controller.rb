@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   def show
     @post.likes.count
-    render json: @post.as_json(include: { comments: { only: [:user_id, :content, :created_at] }, likes: {only: [:user_id, :post_id]} })
+    render json: @post.as_json(include: { comments: { include: { user: { only: :username } } }, likes: {only: [:user_id, :post_id]}, user: {only: [:username] } })
   end
 
   # POST /posts
