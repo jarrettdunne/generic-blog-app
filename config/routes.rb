@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get '/user/:id/posts', to: 'posts#get_user_posts'
   
   post '/posts/:id/comments', to: 'comments#create'
+
+  put '/posts/:id/like', to: 'posts#like'
+
+  get '/posts/trending', to: 'posts#trending'
   
   resources :likes
   # resources :comments
