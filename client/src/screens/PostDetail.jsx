@@ -13,7 +13,7 @@ export default function PostDetail(props) {
     const params = useParams()
     const [ post, setPost ] = useState(null)
     const { currentUser } = props
-
+    
     useEffect(() => {
         const fetchPost = async (id) => {
             const postData = await getOnePost(params.id)
