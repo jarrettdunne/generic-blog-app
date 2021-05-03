@@ -13,7 +13,7 @@ export default function Navbar(props) {
     return (
         <header className="nav">
             <div className="nav-logo">
-                <Link className='nav-links' to='/'>b l o g i c</Link>
+                <Link className='nav-links' to='/'>b l o g s</Link>
             </div>
             <div className="search-wrapper">
                 <form className="search-form">
