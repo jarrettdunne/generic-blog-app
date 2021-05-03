@@ -41,7 +41,7 @@ export default function Home(props) {
         return (
             <div className="home-trends-topics">
                 {trending && [...Array(10).keys()].map((i) => (
-                    <div>
+                    <div key={i}>
                         {i + 1}. {trending[i][0]}
                     </div>
                 ))}
