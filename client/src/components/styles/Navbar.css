@@ -122,5 +122,6 @@
 }
 
 .nav-logout-button:hover {
-    border-bottom: solid rgb(150, 150, 150) 2px;
+    background-color: #bbbbbb;
+    border-radius: 3px;
 }
