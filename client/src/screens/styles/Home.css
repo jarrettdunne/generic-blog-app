@@ -10,7 +10,7 @@
 
 .home-trends-wrapper {
     height: 400px;
-    width: 300px;
+    width: 200px;
     border: solid rgb(150, 150, 150) 2px;
     border-radius: 3px;
     margin: 0 10px;
@@ -23,7 +23,15 @@
     padding: 10px;
     font-weight: 700;
     display: flex;
+    justify-content: flex-start;
+}
+
+.home-trends-topics {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-start;
+    padding: 15px;
 }
 
 .home-options-container {
