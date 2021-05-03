@@ -29,3 +29,8 @@ export const deletePost = async (id) => {
   const resp = await api.delete(`/posts/${id}`);
   return resp;
 }
+
+export const getTrendingPosts = async () => {
+  const resp = await api.get('/posts/trending');
+  return resp.data;
+}
