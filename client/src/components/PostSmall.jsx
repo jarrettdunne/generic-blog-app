@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 
 import unsavedIcon from '../assests/bookmark_border_black_48dp.svg'

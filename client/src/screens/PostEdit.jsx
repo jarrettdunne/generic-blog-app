@@ -19,7 +19,7 @@ export default function PostEdit(props) {
         if (posts.length) {
             prefillFormData();
         }
-    }, [posts])
+    }, [posts, id])
 
     const handleChange = (e) => {
         const { name, value } = e.target;

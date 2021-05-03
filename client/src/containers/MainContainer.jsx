@@ -6,7 +6,6 @@ import PostCreate from '../screens/PostCreate'
 import PostDetail from '../screens/PostDetail'
 import PostEdit from '../screens/PostEdit'
 import UserHome from '../screens/UserHome'
-import CommentCreate from '../components/CommentCreate'
 
 import { getAllPosts, postPost, putPost, deletePost } from '../services/posts'
 

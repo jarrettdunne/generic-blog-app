@@ -6,7 +6,7 @@ import PostMain from '../components/PostMain'
 import add from '../assests/add_circle_black_48dp.svg'
 import trend from '../assests/trending_up_black_48dp.svg'
 import friend from '../assests/person_black_48dp.svg'
-import clockIcon from  '../assests/schedule_black_48dp.svg'
+// import clockIcon from  '../assests/schedule_black_48dp.svg'
 import watchIcon from  '../assests/watch_later_black_48dp.svg'
 
 import { getTrendingPosts } from '../services/posts'
@@ -41,7 +41,7 @@ export default function Home(props) {
         return (
             <div className="home-trends-topics">
                 {trending && [...Array(10).keys()].map((i) => (
-                    <div>
+                    <div key={i}>
                         {i + 1}. {trending[i][0]}
                     </div>
                 ))}
@@ -71,19 +71,19 @@ export default function Home(props) {
                         :
                         null
                     }   
-                    <Link className="links">
+                    <Link className="links" to='/'>
                         <div className="home-option middle">
                             Hot
                             <img className="icon" src={trend} alt=""/>
                         </div>
                     </Link>
-                    <Link className="links" >
+                    <Link className="links" to='/' >
                         <div className="home-option">
                             Newest
                             <img className="icon" src={watchIcon} alt=""/>
                         </div>
                     </Link>
-                    <Link className="links" >
+                    <Link className="links" to='/' >
                         <div className="home-option">
                             Only Friends
                             <img className="icon" src={friend} alt=""/>
