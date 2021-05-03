@@ -6,7 +6,6 @@ export default class Comment extends Component {
     constructor(props) {
         super(props)
         this.comment = props.comment
-        console.log(this.comment)
     }
     render() {
         return (
