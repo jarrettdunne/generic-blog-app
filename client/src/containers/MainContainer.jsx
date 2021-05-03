@@ -49,7 +49,7 @@ export default function MainContainer(props) {
                 <UserHome handleDelete={handleDelete} posts={posts} currentUser={currentUser} />
             </Route>
             <Route path='/posts/create'>
-                <PostCreate handleCreate={handleCreate} />
+                <PostCreate currentUser={currentUser} handleCreate={handleCreate} />
             </Route>
             <Route path='/posts/:id/edit'>
                 <PostEdit posts={posts} handleEdit={handleEdit} />

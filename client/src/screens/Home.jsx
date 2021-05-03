@@ -72,18 +72,12 @@ export default function Home(props) {
                     <Search handleSearchSubmit={handleSearchSubmit} onChange={onChange} />
                 </div>
                 <div className="home-options-container">
-                    {
-                        currentUser
-                            ?
-                            <Link className="links" to='/posts/create'>
-                                <div className="home-option">
-                                    <img className="icon" src={add} alt="add" />
+                    <Link className="links" to='/posts/create'>
+                        <div className="home-option">
+                            <img className="icon" src={add} alt="add" />
                                 Create a post
                             </div>
-                            </Link>
-                            :
-                            null
-                    }
+                    </Link>
                     <Link className="links" to='/'>
                         <div className="home-option middle">
                             Hot
