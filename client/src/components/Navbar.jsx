@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import UserOptions from './UserOptions'
+
 import account from '../assests/account_circle_black_48dp.svg'
 import searchImg from '../assests/search_black_48dp.svg'
 
@@ -11,36 +13,27 @@ export default function Navbar(props) {
     return (
         <header className="nav">
             <div className="nav-logo">
-                <Link className='nav-links' to='/'>app logo</Link>
+                <Link className='nav-links' to='/'>b l o g i c</Link>
             </div>
             <div className="search-wrapper">
-                <form>
-                    <div className="search-bar">
-                        <img className="search-img" src={searchImg} alt="seach" />
-                        <input className="search-input" type="text" placeholder="Seach" />
-                    </div>
+                <form className="search-form">
+                    <img className="search-img" src={searchImg} alt="seach" />
+                    <input className="search-input" type="text" placeholder="Seach" />
                 </form>
             </div>
             <div className="nav-links nav-links-right">
                 {
                     currentUser ?
                         <>
-                            <button onClick={handleLogout}>Logout</button>
+                            <button className="nav-logout-button" onClick={handleLogout}>logout</button>
                         </>
                         :
-                        <>
-                            <Link to='/login'>
-                                <div className="nav-sign-in">Sign In</div>
-                            </Link>
-                            <Link to='/register'>
-                                <div className="nav-sign-up">Sign Up</div>
-                            </Link>
-                        </>
+                        <UserOptions />
                 }
                 {
                     currentUser &&
                     <>
-                        <Link to='/user'>
+                        <Link to={`/user/${currentUser.id}/posts`}>
                             <img className="account-icon" src={account} alt=""/>
                         </Link>
                     </>

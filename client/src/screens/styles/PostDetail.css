@@ -1,1 +1,27 @@
+.post-detail-wrapper {
+    border-left: solid rgb(150, 150, 150) 2px;
+    border-top: solid rgb(150, 150, 150) 2px;
+    border-right: solid rgb(150, 150, 150) 2px;
+    /* border-bottom: solid rgb(150, 150, 150) 2px; */
+    border-radius: 2px;
+}
 
+.comments-wrapper {
+    /* border-top: solid rgb(150, 150, 150) 2px; */
+    border-left: solid rgb(150, 150, 150) 2px;
+    border-right: solid rgb(150, 150, 150) 2px;
+    border-bottom: solid rgb(150, 150, 150) 2px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+
+.create-comment-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-left: solid rgb(150, 150, 150) 2px;
+    border-right: solid rgb(150, 150, 150) 2px;
+    background-color: #ECECEC;
+    padding: 10px;
+}

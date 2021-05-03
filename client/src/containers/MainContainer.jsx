@@ -6,9 +6,9 @@ import PostCreate from '../screens/PostCreate'
 import PostDetail from '../screens/PostDetail'
 import PostEdit from '../screens/PostEdit'
 import UserHome from '../screens/UserHome'
+import CommentCreate from '../components/CommentCreate'
 
-import { getAllPosts } from '../services/posts'
-// import { deleteFood, getAllFoods, postFood, putFood } from '../services/foods'
+import { getAllPosts, postPost, putPost, deletePost } from '../services/posts'
 
 export default function MainContainer(props) {
     const [posts, setPosts] = useState([])
@@ -24,23 +24,42 @@ export default function MainContainer(props) {
         fetchPosts()
     }, [])
 
+    const handleCreate = async (formData) => {
+        const data = await postPost(formData);
+        setPosts(prevState => [...prevState, data])
+        history.push('/')
+    }
+    
+    const handleEdit = async (id, formData) => {
+        const foodData = await putPost(id, formData);
+        setPosts(prevState => prevState.map(food => {
+            return food.id === Number(id) ? foodData : food
+        }))
+        history.goBack()
+    }
+
+    const handleDelete = async (id) => {
+        await deletePost(id);
+        setPosts(prevState => prevState.filter(i => i.id !== id))
+        history.goBack()
+    }
 
     return (
         <Switch>
+            <Route path='/user/:id/posts'>
+                <UserHome handleDelete={handleDelete} posts={posts} currentUser={currentUser} />
+            </Route>
             <Route path='/posts/create'>
-                <PostCreate />
+                <PostCreate handleCreate={handleCreate} />
             </Route>
             <Route path='/posts/:id/edit'>
-                <PostEdit />
+                <PostEdit posts={posts} handleEdit={handleEdit} />
             </Route>
             <Route path='/posts/:id'>
-                <PostDetail posts={posts} />
-            </Route>
-            <Route path='/user'>
-                <UserHome />
+                <PostDetail currentUser={currentUser} posts={posts} />
             </Route>
             <Route path='/'>
-                <Home posts={posts} />
+                <Home currentUser={currentUser} posts={posts} />
             </Route>
         </Switch>
     )
