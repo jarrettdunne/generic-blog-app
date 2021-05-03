@@ -61,6 +61,24 @@ export default function PostSmall(props) {
         e.preventDefault()
     }
 
+    const times = () => {
+        return (
+            <>
+                {
+                    (post.created_at === post.updated_at)
+                    ?
+                    <>
+                        posted {timeSince(post.updated_at)}
+                    </>
+                    :
+                    <>
+                        posted {timeSince(post.created_at)} &nbsp; updated {timeSince(post.updated_at)}
+                    </>
+                }
+            </>
+        )
+    }
+
     return (
         <div className="post-wrapper">
             <div className="post-bar">
@@ -97,7 +115,7 @@ export default function PostSmall(props) {
             <div className="post-contents">
                 <div className="post-header post-small-header">
                     <div className="post-header-info">
-                        <div className="post-header-about">posted {timeSince(post.created_at)}</div>
+                        <div className="post-header-about">{times()}</div>
                         <div className="post-header-title">{post.title}</div>
                     </div>
                     <div className="post-controls">

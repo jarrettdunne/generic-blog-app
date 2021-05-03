@@ -58,6 +58,24 @@ export default function PostMain(props) {
         e.preventDefault()
     }
 
+    const times = () => {
+        return (
+            <>
+                {
+                    (post.created_at === post.updated_at)
+                    ?
+                    <>
+                        posted {timeSince(post.updated_at)}
+                    </>
+                    :
+                    <>
+                        posted {timeSince(post.created_at)} &nbsp; updated {timeSince(post.updated_at)}
+                    </>
+                }
+            </>
+        )
+    }
+
     return (
         <div className="post-wrapper">
             <div className="post-bar">
@@ -93,7 +111,7 @@ export default function PostMain(props) {
             </div>
             <div className="post-contents">
                 <div className="post-header">
-                    <div className="post-header-about">posted {timeSince(post.created_at)}</div>
+                    <div className="post-header-about">{times()}</div>
                     <div className="post-header-title">{post.title}</div>
                 </div>
                 <div className="post-content">{post.content}</div>
