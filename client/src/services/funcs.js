@@ -24,5 +24,4 @@ export const timeSince = (t) => {
     } else {
         return 'just now'
     }
-    return 
 }
