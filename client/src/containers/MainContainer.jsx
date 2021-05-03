@@ -47,7 +47,7 @@ export default function MainContainer(props) {
     return (
         <Switch>
             <Route path='/user/:id/posts'>
-                <UserHome handleDelete={handleDelete} />
+                <UserHome handleDelete={handleDelete} posts={posts} currentUser={currentUser} />
             </Route>
             <Route path='/posts/create'>
                 <PostCreate handleCreate={handleCreate} />
