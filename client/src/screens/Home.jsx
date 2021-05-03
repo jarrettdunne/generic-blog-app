@@ -71,19 +71,19 @@ export default function Home(props) {
                         :
                         null
                     }   
-                    <Link className="links">
+                    <Link className="links" to='/'>
                         <div className="home-option middle">
                             Hot
                             <img className="icon" src={trend} alt=""/>
                         </div>
                     </Link>
-                    <Link className="links" >
+                    <Link className="links" to='/' >
                         <div className="home-option">
                             Newest
                             <img className="icon" src={watchIcon} alt=""/>
                         </div>
                     </Link>
-                    <Link className="links" >
+                    <Link className="links" to='/' >
                         <div className="home-option">
                             Only Friends
                             <img className="icon" src={friend} alt=""/>
